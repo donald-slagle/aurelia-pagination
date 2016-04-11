@@ -2,7 +2,7 @@
   "name": "aurelia-pagination",
   "version": "1.0.1",
   "description": "A pagination plugin for Aurelia.",
-  "main": "dist/aurelia-pagination.js",
+  "main": "dist/commonjs/aurelia-pagination.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
