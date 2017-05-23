@@ -1,4 +1,4 @@
-define(['exports'], function (exports) {
+define(['exports', 'aurelia-pal'], function (exports, _aureliaPal) {
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
@@ -7,6 +7,6 @@ define(['exports'], function (exports) {
   exports.configure = configure;
 
   function configure(aurelia) {
-    aurelia.globalResources('./pagination/pagination');
+    aurelia.globalResources(_aureliaPal.PLATFORM.moduleName('./pagination/pagination'));
   }
 });

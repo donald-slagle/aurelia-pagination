@@ -5,6 +5,8 @@ Object.defineProperty(exports, '__esModule', {
 });
 exports.configure = configure;
 
+var _aureliaPal = require('aurelia-pal');
+
 function configure(aurelia) {
-  aurelia.globalResources('./pagination/pagination');
+  aurelia.globalResources(_aureliaPal.PLATFORM.moduleName('./pagination/pagination'));
 }

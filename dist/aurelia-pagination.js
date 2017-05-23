@@ -1,4 +1,5 @@
+import {PLATFORM} from 'aurelia-pal';
 
 export function configure(aurelia) {
-  aurelia.globalResources('./pagination/pagination');
+  aurelia.globalResources(PLATFORM.moduleName('./pagination/pagination'));
 }

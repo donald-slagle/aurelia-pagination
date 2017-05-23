@@ -1,14 +1,18 @@
-System.register([], function (_export) {
+System.register(['aurelia-pal'], function (_export) {
   'use strict';
+
+  var PLATFORM;
 
   _export('configure', configure);
 
   function configure(aurelia) {
-    aurelia.globalResources('./pagination/pagination');
+    aurelia.globalResources(PLATFORM.moduleName('./pagination/pagination'));
   }
 
   return {
-    setters: [],
+    setters: [function (_aureliaPal) {
+      PLATFORM = _aureliaPal.PLATFORM;
+    }],
     execute: function () {}
   };
 });
